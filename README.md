@@ -79,9 +79,9 @@ Below are the key steps I took:
 - Column Separation in Excel
   - The original dataset had all values merged into a single column. Using Text to Columns (Alt + A + E), I separated the data into appropriate individual columns for proper structuring.
 
-RAW DATA                                                                            |  SEPARATED           
+RAW                                                                                 |  PROCESSED          
 :---------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------:
- ![](RawData.jpg)                                                                   |   ![](RawData.jpg)
+ ![](RawData.jpg)                                                                   |   ![](Separated.jpg)
 
 - Duplicate Check
   - I scanned the dataset for duplicate records and ensured only unique entries were retained to prevent skewed insights.
@@ -92,7 +92,7 @@ RAW DATA                                                                        
 - Power Query Transformations
 I imported the dataset into Power Query for more structured cleaning:
 
-  - Renamed Columns: Adjusted column names for clarity and consistency (e.g., converting “yrsAtCompany” to “YearsAtCompany”).
+  - Renamed Columns: Adjusted column names for clarity and consistency.
     
   - Replaced Values: Used the Replace Values function to improve interpretability. For instance, changing numeric values in worklife balance ratings to descriptive labels like “Low,” “High” etc.
     
@@ -103,15 +103,17 @@ I imported the dataset into Power Query for more structured cleaning:
   - Created Custom Columns:
     To enhance the insights from the dashboard, I wrote custom DAX formulas to create calculated columns that grouped continuous variables into more interpretable categories. These included:
     
-      - Age Grouping – Categorized employees into age bands (e.g., 18–25, 26–35, etc.).
+      - Age Grouping – Categorized employees into age bands (e.g., 18–30, 31–50, etc.).
         
       - Distance Bands – Grouped employee travel distances into Close 0-10, Moderate 10-20, and Far 21-30 ranges.
         
-      - Job Satisfaction Levels – Translated numeric ratings (1–4) into labels like Low, Moderate, High, and Very High.
+      - Years at company – Oragnized numeric ratings (1–40) into categories (e.g., 0-5 years, 6-10years etc.)
         
       - Job Level & Work-Life Balance Tiers – Reorganized internal rating scales into understandable segments for quicker comparisons.
       
-        Example DAX Formula: _AgeGroup = SWITCH(TRUE(), Employee[Age] <= 25, "18–25", Employee[Age] <= 35, "26–35", Employee[Age] <= 45, "36–45", "46+")_
+        A DAX Formula I used Example:
+
+        ![](Dax.jpg)
 
 These engineered features made the visualizations easier to interpret and more aligned with real-world business categories.
 
