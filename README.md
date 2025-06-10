@@ -79,9 +79,9 @@ Below are the key steps I took:
 - Column Separation in Excel
   - The original dataset had all values merged into a single column. Using Text to Columns (Alt + A + E), I separated the data into appropriate individual columns for proper structuring.
 
-RAW                                                                                 |  PROCESSED          
-:---------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------:
- ![](RawData.jpg)                                                                   |   ![](Separated.jpg)
+RAW                                                                    |  PROCESSED          
+:--------------------------------------------------------------------: | :----------------------------------------------------------------------------------:
+ ![](RawData.jpg)                                                      |   ![](Separated.jpg)
 
 - Duplicate Check
   - I scanned the dataset for duplicate records and ensured only unique entries were retained to prevent skewed insights.
