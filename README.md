@@ -117,4 +117,19 @@ I imported the dataset into Power Query for more structured cleaning:
 
 These engineered features made the visualizations easier to interpret and more aligned with real-world business categories.
 
+## Data Analysis and Visualizations
+
+![](Metrics.jpg)
+
+![](Metrics2.jpg)
+
+**Understand the demographics and age distribution of employees**
+
+- Most employees fall within the 31–50 age group (941), indicating a mature workforce.
+
+- There are fewer employees aged 51–60 (143), suggesting potential upcoming retirements.
+
+- The 18–30 group represents the smallest slice, which may signal a need for graduate recruitment or internship pipelines.
+
+
 
