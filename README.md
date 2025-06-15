@@ -21,24 +21,15 @@ The dataset consists of **1,471** rows and **20** columns, each representing emp
 
 **Key Column Overview:**
 
-- **Age** – The age of the employee.
-- **Attrition** – Whether the employee has left the company (Yes/No).
-- **BusinessTravel** – Frequency of business travel (e.g., Rarely, Frequently, Non-Travel).
-- **Department** – The department the employee works in (e.g., Sales, HR, R&D).
-- **DistanceFromHome** – Distance (in kilometers/miles) between the employee’s home and workplace.
-- **EmployeeNumber** – Unique identifier for each employee.
-- **Gender** – Gender of the employee (Male/Female).
-- **JobInvolvement** – Degree of involvement or commitment the employee has toward their job (1–4).
-- **JobLevel** – Level or rank of the employee within the organization (1-5).
-- **JobRole** – Specific job title or role (e.g., Sales Executive, Research Scientist).
-- **JobSatisfaction** – Employee’s satisfaction level with their job (1 = Low, 4 = Very High).
-- **MaritalStatus** – Marital status of the employee (Single, Married, Divorced).
-- **MonthlyIncome** – Monthly income of the employee.
-- **OverTime** – Whether the employee works overtime (Yes/No).
-- **TotalWorkingYears** – Total number of years the employee has spent in the workforce.
-- **TrainingTimesLastYear** – Number of training programs attended in the past year.
-- **WorkLifeBalance** – Employee’s perception of work-life balance (1 = Very low, 4 = Very high).
-- **YearsAtCompany** – Number of years the employee has worked at the current company.
+COLUMNS                                         |DESCRIPTION
+:-----------------------------------------------|:------------------------------------------------------
+Age                                             |The age of the employee
+BusinessTravel                                  |Frequency of business travel (e.g., Rarely, Frequently, Non-Travel)
+DistanceFromHome                                |Distance (in kilometers/miles) between the employee’s home and workplace
+JobInvolvement                                  |Degree of involvement or commitment the employee has toward their job (1–4)
+JobLevel                                        |Level or rank of the employee within the organization (1-5)
+OverTime                                        |Whether the employee works overtime (Yes/No)
+WorkLifeBalance                                 |Employee’s perception of work-life balance (1 = Very low, 4 = Very high)
 
 
 ## Tools Used
@@ -53,26 +44,26 @@ The dataset consists of **1,471** rows and **20** columns, each representing emp
 
 ## Project Objectives
 
-Understand the Demographic Distribution of Employees
-➤ To analyze employee age, gender, marital status, department, and job level in order to understand the workforce structure and diversity.
+Understand the Demographic Distribution of Employees.
+  - To analyze employee age, gender, marital status, department, and job level in order to understand the workforce structure and diversity.
 
-Assess Job Satisfaction and Related Experience Metrics
-➤ To examine employee satisfaction ratings (job satisfaction, relationship satisfaction, involvement, work-life balance) and how they vary across departments and roles.
+Assess Job Satisfaction and Related Experience Metrics.
+  - To examine employee satisfaction ratings (job satisfaction, relationship satisfaction, involvement, work-life balance) and how they vary across departments and roles.
 
-Identify Employees Due for Promotion
-➤ To detect staff who have stayed long in their current roles or haven’t been promoted recently and may be ready for advancement.
+Identify Employees Due for Promotion.
+  - To detect staff who have stayed long in their current roles or haven’t been promoted recently and may be ready for advancement.
 
-Flag Potential Retrenchment Risks
-➤ To identify patterns such as low job satisfaction, long commute, or overtime work that may indicate burnout or disengagement.
+Flag Potential Retrenchment Risks.
+  - To identify patterns such as low job satisfaction, long commute, or overtime work that may indicate burnout or disengagement.
 
-Track Overtime and Work-Life Balance
-➤ To explore the distribution of overtime work and its correlation with work-life balance and job satisfaction.
+Track Overtime and Work-Life Balance.
+  - To explore the distribution of overtime work and its correlation with work-life balance and job satisfaction.
 
-Enable Dynamic Filtering Through Interactive Slicers
-➤ To provide HR decision-makers with filters (age group, distance, overtime, promotion readiness, retrenchment risk) to allow for customized exploration of employee insights.
+Enable Dynamic Filtering Through Interactive Slicers.
+  - To provide HR decision-makers with filters (age group, distance, overtime, promotion readiness, retrenchment risk) to allow for customized exploration of employee insights.
 
-Support Data-Driven HR Decisions Through Clear Visualizations
-➤ To build a visually intuitive and interactive dashboard that makes it easy to spot trends, compare groups, and make strategic HR decisions.
+Support Data-Driven HR Decisions Through Clear Visualizations.
+  - To build a visually intuitive and interactive dashboard that makes it easy to spot trends, compare groups, and make strategic HR decisions.
 
 ## Data Cleaning & Preparation
 
@@ -94,6 +85,7 @@ RAW                                                                    |  PROCES
   - I ensured consistency in data presentation by standardizing font types and sizes, which helped with clarity during analysis.
 
 - Power Query Transformations
+
 I imported the dataset into Power Query for more structured cleaning:
 
   - Renamed Columns: Adjusted column names for clarity and consistency.
@@ -121,37 +113,46 @@ I imported the dataset into Power Query for more structured cleaning:
 
 These engineered features made the visualizations easier to interpret and more aligned with real-world business categories.
 
-## Data Analysis and Visualizations
-
-![](Metrics.jpg)
-
-![](Metrics2.jpg)
-
 ## 📊DATA ANALYSIS & VISUALIZATION
 
-This analysis explores key workforce metrics such as age distribution, job satisfaction, job level, distance from home, overtime workload, and employee readiness for promotion or retrenchment. Using Power BI, I built interactive dashboards with slicers and logic-based categories to allow stakeholders to explore the workforce from multiple dimensions.
+![](Dashboard1.jpg)
+
+![](Dashboard2.jpg)
+
+![](Dashboard3.jpg)
+
+This analysis was conducted using a structured HR dataset consisting of 1,470 employee records and 20 columns, focusing on core workforce metrics such as job satisfaction, distance from home, job level, overtime, and readiness for promotion or retrenchment. The dataset was modeled and visualized in Power BI using DAX-based custom groupings and slicers to improve interactivity and decision-making clarity.
 
 Explore the insights from my dashboard below:
 
 [HR_METRICS_PROJECT.pbix](https://github.com/Portia-Reginald/HR-METRICS/blob/main/HR_METRICS_PROJECT.pbix)
 
-👥 Workforce Demographics
-Total Employees:
+
+
+
+
+
+## **👥 Workforce Demographics**
+
+**Total Employees:**
+
 1,470 employees were analyzed in this dataset.
 
-Gender Distribution:
+**Gender Distribution:**
+
 Male: 882 employees (60%)
 
 Female: 588 employees (40%)
 
-Marital Status:
+**Marital Status:**
+
 Married: 673 employees (46%)
 
 Single: 470 employees (32%)
 
 Divorced: 327 employees (22%)
 
-🔎 Insights:
+**🔎 Insights:**
 
 The workforce is predominantly male (60%), which might reflect industry-specific trends. Efforts toward gender diversity could be considered.
 
@@ -159,7 +160,9 @@ A high proportion of married employees (46%) suggests workforce stability and ma
 
 The divorced population (22%) is significant — worth exploring in relation to job satisfaction, work-life balance, and support policies.
 
-🧓 Age Distribution
+
+## **🧓 Age Distribution**
+
 Grouped as:
 
 18–30 years: 386 employees (26%)
@@ -176,7 +179,8 @@ Only 26% are early-career professionals — a low proportion that may indicate w
 
 The 10% in the 51–60 age range could be nearing retirement; succession planning may be needed.
 
-🚗 Distance from Home
+## **🚗 Distance from Home**
+
 Grouped as:
 
 0–10 km: 1,026 employees (70%)
@@ -185,25 +189,29 @@ Grouped as:
 
 21–30 km: 204 employees (14%)
 
-🔎 Insights:
+**🔎 Insights:**
 
 Most employees live close to the workplace (within 10 km), which is ideal for lower commute stress and higher punctuality.
 
 Those living 21–30 km away (14%) may face longer commutes, possibly affecting job satisfaction or retention — worth monitoring.
 
-🕒 Overtime Distribution
+## **🕒 Overtime Distribution**
+
 Working Overtime: 117 employees (8%)
 
 Not Working Overtime: 1,353 employees (92%)
 
-🔎 Insights:
+**🔎 Insights:**
 
 Overtime is concentrated among a small segment (8%), which could indicate overdependence on a subset of employees.
 
 This group should be further analyzed to ensure workload balance and avoid burnout.
 
-💼 Job Satisfaction Levels
-Grouped into: Low, Fair, Good, High
+## **💼 Job Satisfaction Levels**
+
+Grouped into: 
+
+Low, Fair, Good, High
 
 High Satisfaction: 459 employees (31%)
 
@@ -211,11 +219,9 @@ Good Satisfaction: 442 employees (30%)
 
 Combined, 61% of employees report positive satisfaction.
 
-For Sales Executives alone:
+For Sales Executives alone: 112 employees report High satisfaction.
 
-112 employees report High satisfaction.
-
-🔎 Insights:
+**🔎 Insights:**
 
 A 61% satisfaction rate is encouraging and suggests the current HR policies are effective.
 
@@ -223,37 +229,141 @@ Sales Executives, despite being the largest job group, maintain high satisfactio
 
 Remaining employees with Fair or Low ratings can be targeted for feedback or support.
 
-📈 Job Levels & Career Movement
-Employees are grouped into Job Levels 1 to 5, and two DAX-based indicators were created:
+## **📈 Job Levels & Career Movement**
 
-Due for Promotion: 72 employees (5%)
+Employees are categorized across five job levels. Here’s the breakdown as seen on the dashboard:
 
-Due for Retrenchment: 117 employees (8%)
+Job Level 1: 876 employees (60%)
 
-🔎 Insights:
+Job Level 2: 359 employees (24%)
 
-With only 5% eligible for promotion, this could reflect limited upward mobility or stringent promotion criteria — which may impact morale and retention.
+Job Level 3: 146 employees (10%)
 
-The 8% retrenchment risk group might require intervention or reassessment — especially if they hold critical roles or departments.
+Job Level 4: 59 employees (4%)
 
-📊 Tenure, Promotion Gaps, and Role Duration
-Many employees have been in their current roles for over 5 years, and years since last promotion is also high for a significant portion.
+Job Level 5: 30 employees (2%)
 
-A good number have 10+ years total working experience.
+**🔎 Insights:**
 
-🔎 Insights:
+The majority of employees (60%) are at Job Level 1, which likely includes entry-level or junior roles.
 
-While tenure reflects stability, the long duration without promotion could signal career stagnation.
+  → This could indicate a large operational workforce or that the organization relies heavily on frontline staff.
 
-HR should identify high performers in this category for possible internal mobility or reskilling initiatives.
+Job Levels 2 and 3 make up 34% combined, representing mid-level professionals or supervisors.
 
-🎯 Conclusion
-This project reveals key strengths and opportunities in workforce dynamics:
+  → The proportion is healthy but could suggest a narrow middle layer — potentially limiting promotion routes.
 
-✅ Strengths:
+Senior roles (Levels 4 & 5) make up just 6% of the entire workforce.
 
-High proximity to work and low commute stress
+  → This aligns with a typical pyramid structure but also shows that only a few roles exist for career advancement, which may affect motivation for those at lower levels.
 
-Strong job satisfaction among majority
+Given the small number of people due for promotion (72 employees), it’s possible that promotions are limited by available higher-level roles, not necessarily performance.
 
-Stable workforce with mid-care
+
+## **📈 Career Movement**
+
+**Due for Promotion**
+
+Total Employees Due for Promotion: 72
+
+Percentage of Workforce: ~4.9% of 1,470 employees
+
+**🔍 Insights:**
+
+Only about 5% of employees are tagged as ready for promotion, which is relatively low.
+
+This may suggest strict promotion criteria, limited upward mobility, or an early-stage workforce where many haven't yet met tenure or performance thresholds.
+
+In combination with the job level data, this small percentage supports the idea of a narrow internal promotion structure.
+
+It may also reflect a need for stronger internal development programs or clearer promotion pipelines.
+
+**Due for Retrenchment**
+
+Total Employees Flagged for Retrenchment: 117
+
+Percentage of Workforce: ~8%
+
+**🔍 Insights:**
+
+A retrenchment-risk figure of 8% could indicate workforce restructuring, performance concerns, or overstaffing in certain departments.
+
+If this overlaps significantly with entry-level staff, it might suggest that some operational roles are at risk due to automation, performance issues, or business realignment.
+
+It would be worth cross-checking job roles, satisfaction ratings, or tenure among those marked for retrenchment to better understand the underlying causes.
+
+## **⏳ Tenure and Career Longevity**
+
+**Years in Current Role**
+
+This metric reflects how long employees have remained in the same position without a role change.
+
+A large portion of employees have spent 2–4 years in the same role.
+
+A smaller portion have stayed 5+ years, with a few outliers beyond 7 years.
+
+**🔍 Insights:**
+
+Moderate tenure in current roles (2–4 years) suggests some stability, but possibly stagnation if not paired with promotions or lateral moves.
+
+High tenure in the same role may indicate a lack of mobility, either due to limited opportunities or poor succession planning.
+
+Conversely, longer tenure in role might also reflect loyalty and mastery in specialized roles.
+
+**Years Since Last Promotion**
+
+This metric sheds light on how long it’s been since employees were last promoted.
+
+Many employees haven’t been promoted in 3+ years.
+
+Only a small percentage were promoted within the last 1–2 years.
+
+**🔍 Insights:**
+
+The long gap since last promotion for most employees aligns with the earlier observation that promotion rates are low.
+
+It may suggest a bottleneck at middle levels, or that promotion policies are time-based rather than performance-based.
+
+This could impact motivation, especially among high performers waiting years for career progression.
+
+## **Conclusion**
+
+This HR Metrics Analysis has provided a comprehensive overview of the workforce across multiple dimensions, including age distribution, job satisfaction, tenure, work-life balance, and promotion/retrenchment readiness.
+
+The findings show that while a large proportion of employees report high job satisfaction and good involvement in their roles, there are significant insights around workforce segmentation that can help drive smarter HR decisions. Notably, the 31–50 age group forms the majority of the workforce (over 63%), and a combined 15% of employees are either due for promotion or potentially at risk of retrenchment—highlighting the need for both talent retention and succession planning strategies.
+
+In addition, overtime appears to be limited to a smaller group (only 8% of the workforce), but this segment may warrant closer attention in terms of workload and burnout risk. Distance from home also presents operational considerations, especially for employees commuting over 20km.
+
+## **Recommendations**
+
+1. Promotion Readiness Review
+
+  - With 72 employees marked as due for promotion, HR can initiate a performance audit to ensure deserving candidates are recognized, while also reducing the risk of stagnation or disengagement.
+
+2. Retrenchment Risk Management
+
+  - The 117 employees flagged as retrenchment-ready should be assessed more closely. Some may benefit from targeted upskilling or reassignment before more drastic decisions are made.
+
+3. Engagement & Retention of Mid-Career Talent
+
+  - Since the 31–50 age group dominates the workforce, tailored retention strategies like leadership tracks, flexible work options, or mentoring programs should be explored to keep this segment engaged and productive.
+
+4. Improve Work-Life Balance Across the Board
+
+  - While many employees report good or high balance, continued focus on reducing unnecessary overtime and offering hybrid/flexible work policies could improve morale and reduce long-term burnout risks.
+
+5. Proximity-Based HR Policies
+
+  - Employees commuting over 20km (444 in total) may benefit from transportation stipends, remote days, or satellite office options, improving productivity and reducing lateness or fatigue.
+
+6. Leverage Satisfaction Data to Improve Retention
+
+  - Satisfaction is highest in Sales Executives and several other roles — explore what’s working in those departments (e.g., leadership, incentives, team culture).Replicate these models across other departments with lower satisfaction ratings to build a stronger, more consistent employee experience.
+
+
+
+## CONTACT ME
+
+E-mail: portiareginald06@gmail.com
+
+LinkedIn: [Portia Reginald Anrulika](https://www.linkedin.com/in/portia-reginald-13103719a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app)
