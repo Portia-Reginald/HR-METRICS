@@ -52,23 +52,27 @@ The dataset consists of **1,471** rows and **20** columns, each representing emp
   - [Need this? Click to download Power BI.](https://www.microsoft.com/en-us/power-platform/products/power-bi/downloads)
 
 ## Project Objectives
-**1. Analyze Employee Attrition Trends**
-  - Identify patterns and key indicators contributing to employee turnover, such as job satisfaction, work-life balance, and distance from home.
 
-**2. Assess Employee Performance and Engagement**
-  - Evaluate how factors like job involvement, job satisfaction, and training impact performance ratings and engagement levels.
+Understand the Demographic Distribution of Employees
+➤ To analyze employee age, gender, marital status, department, and job level in order to understand the workforce structure and diversity.
 
-**3. Explore Compensation and Promotion Insights**
-  - Investigate relationships between income levels, salary, and years since last promotion to highlight possible inequities or gaps.
+Assess Job Satisfaction and Related Experience Metrics
+➤ To examine employee satisfaction ratings (job satisfaction, relationship satisfaction, involvement, work-life balance) and how they vary across departments and roles.
 
-**4. Segment the Workforce for Strategic Decision-Making**
-  - Group employees by job roles, departments, and satisfaction levels to help HR teams tailor their policies and retention strategies.
+Identify Employees Due for Promotion
+➤ To detect staff who have stayed long in their current roles or haven’t been promoted recently and may be ready for advancement.
 
-**5. Visualize Workforce Demographics and Trends**
-  - Use interactive dashboards to represent employee distribution across age, gender, and marital status for diversity and inclusion insights.
+Flag Potential Retrenchment Risks
+➤ To identify patterns such as low job satisfaction, long commute, or overtime work that may indicate burnout or disengagement.
 
-**6. Support Data-Driven HR Decisions**
-  - Provide management with clear, actionable insights that can guide planning around recruitment, promotions, training, and employee well-being.
+Track Overtime and Work-Life Balance
+➤ To explore the distribution of overtime work and its correlation with work-life balance and job satisfaction.
+
+Enable Dynamic Filtering Through Interactive Slicers
+➤ To provide HR decision-makers with filters (age group, distance, overtime, promotion readiness, retrenchment risk) to allow for customized exploration of employee insights.
+
+Support Data-Driven HR Decisions Through Clear Visualizations
+➤ To build a visually intuitive and interactive dashboard that makes it easy to spot trends, compare groups, and make strategic HR decisions.
 
 ## Data Cleaning & Preparation
 
@@ -123,13 +127,37 @@ These engineered features made the visualizations easier to interpret and more a
 
 ![](Metrics2.jpg)
 
-**Understand the demographics and age distribution of employees**
+## 📊DATA ANALYSIS & VISUALIZATION
 
-- Most employees fall within the 31–50 age group (941), indicating a mature workforce.
+This analysis explores key workforce metrics such as age distribution, job satisfaction, job level, distance from home, overtime workload, and employee readiness for promotion or retrenchment. Using Power BI, I built interactive dashboards with slicers and logic-based categories to allow stakeholders to explore the workforce from multiple dimensions.
 
-- There are fewer employees aged 51–60 (143), suggesting potential upcoming retirements.
+Explore the insights from my dashboard below:
 
-- The 18–30 group represents the smallest slice, which may signal a need for graduate recruitment or internship pipelines.
+[HR_METRICS_PROJECT.pbix](https://github.com/Portia-Reginald/HR-METRICS/blob/main/HR_METRICS_PROJECT.pbix)
 
+👥 Workforce Demographics & Distribution
 
+Total Employees: 1,470
+
+Gender: 60% Male (882), 40% Female (588)
+
+Marital Status:
+
+Married: 673
+
+Single: 470
+
+Divorced: 327
+This indicates a gender imbalance, which may be a point of attention for diversity efforts.Gender imbalance and marital status variations may affect flexibility needs, benefits planning, and retention priorities.
+🧓 Age Distribution
+The workforce was grouped into three age categories:
+
+18–30 years: 386 employees (26%)
+
+31–50 years: 941 employees (64%)
+
+51–60 years: 143 employees (10%)
+
+🔎 Insight:
+The majority of the workforce (64%) falls within the 31–50 age bracket, indicating an experienced and potentially mid-to-senior level population. The smaller 18–30 group suggests room for improved early-career hiring or retention strategies.
 
