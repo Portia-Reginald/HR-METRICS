@@ -135,22 +135,32 @@ Explore the insights from my dashboard below:
 
 [HR_METRICS_PROJECT.pbix](https://github.com/Portia-Reginald/HR-METRICS/blob/main/HR_METRICS_PROJECT.pbix)
 
-👥 Workforce Demographics & Distribution
+👥 Workforce Demographics
+Total Employees:
+1,470 employees were analyzed in this dataset.
 
-Total Employees: 1,470
+Gender Distribution:
+Male: 882 employees (60%)
 
-Gender: 60% Male (882), 40% Female (588)
+Female: 588 employees (40%)
 
 Marital Status:
+Married: 673 employees (46%)
 
-Married: 673
+Single: 470 employees (32%)
 
-Single: 470
+Divorced: 327 employees (22%)
 
-Divorced: 327
-This indicates a gender imbalance, which may be a point of attention for diversity efforts.Gender imbalance and marital status variations may affect flexibility needs, benefits planning, and retention priorities.
+🔎 Insights:
+
+The workforce is predominantly male (60%), which might reflect industry-specific trends. Efforts toward gender diversity could be considered.
+
+A high proportion of married employees (46%) suggests workforce stability and maturity, potentially impacting benefits structure, engagement programs, and scheduling flexibility.
+
+The divorced population (22%) is significant — worth exploring in relation to job satisfaction, work-life balance, and support policies.
+
 🧓 Age Distribution
-The workforce was grouped into three age categories:
+Grouped as:
 
 18–30 years: 386 employees (26%)
 
@@ -158,6 +168,92 @@ The workforce was grouped into three age categories:
 
 51–60 years: 143 employees (10%)
 
-🔎 Insight:
-The majority of the workforce (64%) falls within the 31–50 age bracket, indicating an experienced and potentially mid-to-senior level population. The smaller 18–30 group suggests room for improved early-career hiring or retention strategies.
+🔎 Insights:
 
+The dominant age group (31–50) reflects a mid-career, experienced workforce.
+
+Only 26% are early-career professionals — a low proportion that may indicate weak entry-level hiring or retention.
+
+The 10% in the 51–60 age range could be nearing retirement; succession planning may be needed.
+
+🚗 Distance from Home
+Grouped as:
+
+0–10 km: 1,026 employees (70%)
+
+11–20 km: 240 employees (16%)
+
+21–30 km: 204 employees (14%)
+
+🔎 Insights:
+
+Most employees live close to the workplace (within 10 km), which is ideal for lower commute stress and higher punctuality.
+
+Those living 21–30 km away (14%) may face longer commutes, possibly affecting job satisfaction or retention — worth monitoring.
+
+🕒 Overtime Distribution
+Working Overtime: 117 employees (8%)
+
+Not Working Overtime: 1,353 employees (92%)
+
+🔎 Insights:
+
+Overtime is concentrated among a small segment (8%), which could indicate overdependence on a subset of employees.
+
+This group should be further analyzed to ensure workload balance and avoid burnout.
+
+💼 Job Satisfaction Levels
+Grouped into: Low, Fair, Good, High
+
+High Satisfaction: 459 employees (31%)
+
+Good Satisfaction: 442 employees (30%)
+
+Combined, 61% of employees report positive satisfaction.
+
+For Sales Executives alone:
+
+112 employees report High satisfaction.
+
+🔎 Insights:
+
+A 61% satisfaction rate is encouraging and suggests the current HR policies are effective.
+
+Sales Executives, despite being the largest job group, maintain high satisfaction — a strong sign that frontline roles are well-managed.
+
+Remaining employees with Fair or Low ratings can be targeted for feedback or support.
+
+📈 Job Levels & Career Movement
+Employees are grouped into Job Levels 1 to 5, and two DAX-based indicators were created:
+
+Due for Promotion: 72 employees (5%)
+
+Due for Retrenchment: 117 employees (8%)
+
+🔎 Insights:
+
+With only 5% eligible for promotion, this could reflect limited upward mobility or stringent promotion criteria — which may impact morale and retention.
+
+The 8% retrenchment risk group might require intervention or reassessment — especially if they hold critical roles or departments.
+
+📊 Tenure, Promotion Gaps, and Role Duration
+Many employees have been in their current roles for over 5 years, and years since last promotion is also high for a significant portion.
+
+A good number have 10+ years total working experience.
+
+🔎 Insights:
+
+While tenure reflects stability, the long duration without promotion could signal career stagnation.
+
+HR should identify high performers in this category for possible internal mobility or reskilling initiatives.
+
+🎯 Conclusion
+This project reveals key strengths and opportunities in workforce dynamics:
+
+✅ Strengths:
+
+High proximity to work and low commute stress
+
+Strong job satisfaction among majority
+
+Stable workforce with mid-care
