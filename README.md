@@ -44,25 +44,25 @@ WorkLifeBalance                                 |Employee’s perception of work
 
 ## Project Objectives
 
-Understand the Demographic Distribution of Employees.
+**Understand the Demographic Distribution of Employees.**
   - To analyze employee age, gender, marital status, department, and job level in order to understand the workforce structure and diversity.
 
-Assess Job Satisfaction and Related Experience Metrics.
+**Assess Job Satisfaction and Related Experience Metrics.**
   - To examine employee satisfaction ratings (job satisfaction, relationship satisfaction, involvement, work-life balance) and how they vary across departments and roles.
 
-Identify Employees Due for Promotion.
+**Identify Employees Due for Promotion.**
   - To detect staff who have stayed long in their current roles or haven’t been promoted recently and may be ready for advancement.
 
-Flag Potential Retrenchment Risks.
+**Flag Potential Retrenchment Risks.**
   - To identify patterns such as low job satisfaction, long commute, or overtime work that may indicate burnout or disengagement.
 
-Track Overtime and Work-Life Balance.
+**Track Overtime and Work-Life Balance.**
   - To explore the distribution of overtime work and its correlation with work-life balance and job satisfaction.
 
-Enable Dynamic Filtering Through Interactive Slicers.
+**Enable Dynamic Filtering Through Interactive Slicers.**
   - To provide HR decision-makers with filters (age group, distance, overtime, promotion readiness, retrenchment risk) to allow for customized exploration of employee insights.
 
-Support Data-Driven HR Decisions Through Clear Visualizations.
+**Support Data-Driven HR Decisions Through Clear Visualizations.**
   - To build a visually intuitive and interactive dashboard that makes it easy to spot trends, compare groups, and make strategic HR decisions.
 
 ## Data Cleaning & Preparation
@@ -71,33 +71,33 @@ Before any analysis could begin, the raw dataset required thorough cleaning and 
 
 Below are the key steps I took:
 
-- Column Separation in Excel
+- **Column Separation in Excel**
   - The original dataset had all values merged into a single column. Using Text to Columns (Alt + A + E), I separated the data into appropriate individual columns for proper structuring.
 
 RAW                                                                    |  PROCESSED          
 :--------------------------------------------------------------------: | :----------------------------------------------------------------------------------:
  ![](RawData.jpg)                                                      |   ![](Separated.jpg)
 
-- Duplicate Check
+- **Duplicate Check**
   - I scanned the dataset for duplicate records and ensured only unique entries were retained to prevent skewed insights.
 
-- Font & Formatting Standardization
+- **Font & Formatting Standardization**
   - I ensured consistency in data presentation by standardizing font types and sizes, which helped with clarity during analysis.
 
-- Power Query Transformations
+- **Power Query Transformations**
 
-I imported the dataset into Power Query for more structured cleaning:
+    I imported the dataset into Power Query for more structured cleaning:
 
-  - Renamed Columns: Adjusted column names for clarity and consistency.
+  - **Renamed Columns**: Adjusted column names for clarity and consistency.
     
-  - Replaced Values: Used the Replace Values function to improve interpretability. For instance, changing numeric values in worklife balance ratings to descriptive labels like “Low,” “High” etc.
+  - **Replaced Values:** Used the Replace Values function to improve interpretability. For instance, changing numeric values in worklife balance ratings to descriptive labels like “Low,” “High” etc.
     
-  - Filtered Out Irrelevant Data: Removed null values and any columns not relevant to the analysis.
+  - **Filtered Out Irrelevant Data:** Removed null values and any columns not relevant to the analysis.
     
-  - Changed Data Types: Ensured that numerical fields (e.g., Age, MonthlyIncome) and categorical fields (e.g., Department, Gender) were assigned the correct data types.
+  - **Changed Data Types:** Ensured that numerical fields (e.g., Age, MonthlyIncome) and categorical fields (e.g., Department, Gender) were assigned the correct data types.
     
-  - Created Custom Columns:
-    To enhance the insights from the dashboard, I wrote custom DAX formulas to create calculated columns that grouped continuous variables into more interpretable categories. These included:
+  - **Created Custom Columns:** To enhance the insights from the dashboard, I wrote custom DAX formulas to create calculated columns that grouped continuous variables into more interpretable categories.
+      These included:
     
       - Age Grouping – Categorized employees into age bands (e.g., 18–30, 31–50, etc.).
         
@@ -106,10 +106,10 @@ I imported the dataset into Power Query for more structured cleaning:
       - Years at company – Oragnized numeric ratings (1–40) into categories (e.g., 0-5 years, 6-10years etc.)
         
       - Job Level & Work-Life Balance Tiers – Reorganized internal rating scales into understandable segments for quicker comparisons.
-      
-        A DAX Formula I used Example:
+  
+  Sample of DAX Formula:
 
-        ![](Dax.jpg)
+  ![](Dax.jpg)
 
 These engineered features made the visualizations easier to interpret and more aligned with real-world business categories.
 
