@@ -4,16 +4,19 @@
 
 This project presents an in-depth analysis of key Human Resource (HR) metrics within an organization. It aims to provide actionable insights into employee dynamics such as satisfaction, promotion eligibility, warnings, tenure, work-life factors etc — all critical for HR decision-making and workforce planning.
 
-The primary goal is to empower HR teams with data-driven insights to:
+_The primary goal is to empower HR teams with data-driven insights to:_
 
 1. Track employee satisfaction and readiness for promotion.
+   
 2. Understand warning patterns and tenure distribution.
+   
 3. Identify potential areas for intervention or improvement.
+   
 4. Make smarter, faster HR decisions backed by visuals.
 
 ## Dataset Information
 
-**Source:** _Collected for educational analysis._
+**Source:** Kaggle
 
 This dataset captures a wide range of HR-related factors used to assess employee experience, satisfaction, and organizational dynamics. It supports exploration into areas such as promotion readiness, job level, income patterns, work-life balance, employee tenure etc.
 
@@ -362,7 +365,7 @@ In addition, overtime appears to be limited to a smaller group (only 8% of the w
 
 
 
-## CONTACT ME
+## Contact Me
 
 E-mail: portiareginald06@gmail.com
 
